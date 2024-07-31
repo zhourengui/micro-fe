@@ -19,6 +19,6 @@ while IFS= read -r repo; do
       echo "Failed to clone $repo"
     fi
   fi
-done < repos.txt
+done < $(pwd)/scripts/repos.txt
 
 echo "Clone completed."

@@ -5,9 +5,6 @@
     "clonerepo": "./scripts/clonerepo.sh",
     "dev": "npx lerna run dev"
   },
-  "dependencies": {
-    "@micro-zoe/micro-app": "^1.0.0-rc.6",
-    "wujie": "^1.0.22"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
