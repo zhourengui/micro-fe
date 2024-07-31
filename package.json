@@ -2,9 +2,12 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "dev": "npx lerna run dev",
-    "preinstall": "./preinstall.sh"
+    "clonerepo": "./scripts/clonerepo.sh",
+    "dev": "npx lerna run dev"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@micro-zoe/micro-app": "^1.0.0-rc.6",
+    "wujie": "^1.0.22"
+  },
   "devDependencies": {}
 }

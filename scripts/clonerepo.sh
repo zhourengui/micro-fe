@@ -14,6 +14,10 @@ while IFS= read -r repo; do
   else
     echo "Cloning $repo..."
     git clone --depth 1 "$repo" "$target_dir"
+
+    if [ $? -ne 0 ]; then
+      echo "Failed to clone $repo"
+    fi
   fi
 done < repos.txt
 
