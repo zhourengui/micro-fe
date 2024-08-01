@@ -5,6 +5,8 @@ if [ ! -d "packages" ]; then
   mkdir packages
 fi
 
+DOT="$(cd "$(dirname "$0")"; cd ../; pwd)"
+
 while IFS= read -r repo; do
   repo_name=$(basename "$repo" .git)
   target_dir="packages/$repo_name"
@@ -19,6 +21,6 @@ while IFS= read -r repo; do
       echo "Failed to clone $repo"
     fi
   fi
-done < $(pwd)/scripts/repos.txt
+done < $DOT/scripts/repos.txt
 
 echo "Clone completed."

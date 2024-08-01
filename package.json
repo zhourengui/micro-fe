@@ -2,9 +2,13 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "clonerepo": "./scripts/clonerepo.sh",
+    "clone_repo": "./scripts/clone_repo.sh",
+    "generate_protos": "./scripts/generate_protos.sh",
     "dev": "npx lerna run dev"
   },
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "lerna": "^8.1.7",
+    "protoc-gen-js": "^3.21.2",
+    "ts-protoc-gen": "0.15.1-pre.a71b34e"
+  }
 }
