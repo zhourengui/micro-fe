@@ -2,7 +2,9 @@ syntax = "proto3";
 
 option optimize_for = CODE_SIZE;
 
+// 命名规则FORM_TO_CHANNEL
 enum MicroAppCommunicationChannel {
-  MICRO_APP_COMMUNICATION_CHANNEL_UNSPECIFIED = 0;
-  MICRO_APP_COMMUNICATION_CHANNEL_GLOBAL_DATA = 1;
+  MAIN_ALL_GLOBAL_DATA_CHANGE_CHANNEL = 0;
+  MAIN_REACT_CHANNEL1 = 1; // Demo 更改有意义的名称
+  MAIN_VUE_CHANNEL1 = 2; // Demo 更改有意义的名称
 }

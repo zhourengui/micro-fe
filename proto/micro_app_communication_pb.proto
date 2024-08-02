@@ -4,9 +4,11 @@ option optimize_for = CODE_SIZE;
 
 import "element_pb.proto";
 
-message MicroAppCommunicationPayload {}
+message MicroAppCommunicationGlobalDataPayload {}
 
 message MicroAppCommunication {
   MicroAppCommunicationChannel channel = 1;
-  MicroAppCommunicationPayload payload = 2;
+  oneof payload_type {
+    MicroAppCommunicationGlobalDataPayload global_data_payload = 2;
+  }
 }
