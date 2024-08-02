@@ -1,7 +1,0 @@
-syntax = "proto3";
-
-package microfeproto;
-
-message GlobalData {
-  int64 counter = 1;
-}

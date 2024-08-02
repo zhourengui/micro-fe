@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+option optimize_for = CODE_SIZE;
+
+enum MicroAppCommunicationChannel {
+  MICRO_APP_COMMUNICATION_CHANNEL_UNSPECIFIED = 0;
+  MICRO_APP_COMMUNICATION_CHANNEL_GLOBAL_DATA = 1;
+}

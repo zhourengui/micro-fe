@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "lerna": "^8.1.7",
-    "protoc-gen-js": "^3.21.2",
-    "ts-protoc-gen": "0.15.1-pre.a71b34e"
+    "protoc-gen-ts": "^0.8.7",
+    "ts-proto": "^1.181.1"
   }
 }
