@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "element.proto";
+
+message MicroAppSinigleDataPayload {
+  MicroAppCommunicationChannel channel = 1;
+  map<string, string> payload = 2;
+  optional string appName = 3;
+}
